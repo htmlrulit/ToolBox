@@ -1,0 +1,17 @@
+/* ChangeCase.css */
+
+.change-case-form {
+    padding: 16px;
+}
+
+.change-case-textarea {
+    margin-bottom: 16px;
+}
+
+.change-case-button {
+    margin-top: 16px;
+}
+
+.change-case-result {
+    margin-top: 24px;
+}

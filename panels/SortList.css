@@ -1,0 +1,17 @@
+/* SortList.css */
+
+.sort-list-form {
+    padding: 16px;
+}
+
+.sort-list-textarea {
+    margin-bottom: 16px;
+}
+
+.sort-list-button {
+    margin-top: 16px;
+}
+
+.sort-list-result {
+    margin-top: 24px;
+}

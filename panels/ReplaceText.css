@@ -1,0 +1,21 @@
+/* ReplaceText.css */
+
+.replace-text-form {
+    padding: 16px;
+}
+
+.replace-text-textarea {
+    margin-bottom: 16px;
+}
+
+.replace-text-input {
+    margin-bottom: 16px;
+}
+
+.replace-text-button {
+    margin-top: 16px;
+}
+
+.replace-text-result {
+    margin-top: 24px;
+}

@@ -1,0 +1,21 @@
+/* AddPrefix.css */
+
+.add-prefix-form {
+    padding: 16px;
+}
+
+.add-prefix-textarea {
+    margin-bottom: 16px;
+}
+
+.add-prefix-input {
+    margin-bottom: 16px;
+}
+
+.add-prefix-button {
+    margin-top: 16px;
+}
+
+.add-prefix-result {
+    margin-top: 24px;
+}

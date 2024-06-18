@@ -1,0 +1,16 @@
+/* LineCount.css */
+
+.line-count-form {
+    padding: 16px;
+}
+
+.line-count-textarea {
+    margin-bottom: 16px;
+}
+
+.line-count-result {
+    margin-top: 24px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+/* NumberLines.css */
+
+.number-lines-form {
+    padding: 16px;
+}
+
+.number-lines-textarea {
+    margin-bottom: 16px;
+}
+
+.number-lines-button {
+    margin-top: 16px;
+}
+
+.number-lines-result {
+    margin-top: 24px;
+}

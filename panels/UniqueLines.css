@@ -1,0 +1,20 @@
+/* UniqueLines.css */
+
+.unique-lines-form {
+    padding: 16px;
+}
+
+.unique-lines-textarea {
+    margin-bottom: 16px;
+}
+
+.unique-lines-button {
+    margin-top: 16px;
+}
+
+.unique-lines-result {
+    margin-top: 24px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}

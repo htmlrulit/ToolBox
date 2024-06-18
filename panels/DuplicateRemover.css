@@ -1,0 +1,21 @@
+/* DuplicateRemover.css */
+
+.duplicate-remover-form {
+  padding: 16px;
+}
+
+.duplicate-remover-textarea {
+  margin-bottom: 16px;
+}
+
+.duplicate-remover-button {
+  margin-top: 16px;
+}
+
+.duplicate-remover-result {
+  margin-top: 24px;
+}
+
+.duplicate-remover-form-status {
+  margin-bottom: 16px;
+}

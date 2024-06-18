@@ -1,0 +1,17 @@
+/* CombineColumns.css */
+
+.combine-columns-form {
+    padding: 16px;
+}
+
+.combine-columns-textarea {
+    margin-bottom: 16px;
+}
+
+.combine-columns-button {
+    margin-top: 16px;
+}
+
+.combine-columns-result {
+    margin-top: 24px;
+}

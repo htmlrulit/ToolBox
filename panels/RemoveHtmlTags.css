@@ -1,0 +1,17 @@
+/* RemoveHtmlTags.css */
+
+.remove-html-tags-form {
+    padding: 16px;
+}
+
+.remove-html-tags-textarea {
+    margin-bottom: 16px;
+}
+
+.remove-html-tags-button {
+    margin-top: 16px;
+}
+
+.remove-html-tags-result {
+    margin-top: 24px;
+}

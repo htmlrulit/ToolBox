@@ -1,0 +1,21 @@
+/* RemoveLineBreaks.css */
+
+.remove-line-breaks-form {
+  padding: 16px;
+}
+
+.remove-line-breaks-textarea {
+  margin-bottom: 16px;
+}
+
+.remove-line-breaks-button {
+  margin-top: 16px;
+}
+
+.remove-line-breaks-result {
+  margin-top: 24px;
+}
+
+.remove-line-breaks-form-status {
+  margin-bottom: 16px;
+}

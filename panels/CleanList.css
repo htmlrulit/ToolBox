@@ -1,0 +1,21 @@
+/* CleanList.css */
+
+.clean-list-form {
+    padding: 16px;
+}
+
+.clean-list-textarea {
+    margin-bottom: 16px;
+}
+
+.clean-list-input {
+    margin-bottom: 16px;
+}
+
+.clean-list-button {
+    margin-top: 16px;
+}
+
+.clean-list-result {
+    margin-top: 24px;
+}

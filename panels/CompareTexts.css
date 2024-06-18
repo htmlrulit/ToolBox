@@ -1,0 +1,23 @@
+/* CompareTexts.css */
+
+.compare-texts-form {
+    padding: 16px;
+}
+
+.compare-texts-textarea {
+    margin-bottom: 16px;
+}
+
+.compare-texts-button {
+    margin-top: 16px;
+}
+
+.compare-texts-result {
+    margin-top: 24px;
+}
+
+.diff-container {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-family: monospace;
+}
