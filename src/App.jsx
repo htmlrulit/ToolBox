@@ -38,7 +38,7 @@ const App = () => {
     bridge.send('VKWebAppGetUserInfo').then(User);
 
     const handlePopState = () => {
-      go("home"); // Меняем на нужный путь, например, "home"
+      goBack();
     };
 
     window.addEventListener("popstate", handlePopState);

@@ -34,9 +34,16 @@ const TextAnalysis = props => {
         }
 
         const wordCount = inputText.split(/\s+/).filter(word => word).length;
-        const sentenceCount = inputText.split(/[.!?]+/).filter(sentence => sentence.trim()).length;
+
+        // Используем регулярное выражение для поиска предложений
+        const sentenceRegex = /[^.!?]+[.!?]+/g;
+        const sentences = inputText.match(sentenceRegex) || [];
+        const sentenceCount = sentences.length;
+
+        // Рассчитываем среднюю длину слов и предложений
         const averageWordLength = inputText.split(/\s+/).filter(word => word).reduce((acc, word) => acc + word.length, 0) / wordCount || 0;
-        const averageSentenceLength = wordCount / sentenceCount || 0;
+        const averageSentenceLength = sentenceCount > 0 ? (wordCount / sentenceCount) : 0;
+
         const characterCountWithSpaces = inputText.length;
         const characterCountWithoutSpaces = inputText.replace(/\s+/g, '').length;
 

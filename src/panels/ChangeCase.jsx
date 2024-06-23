@@ -12,7 +12,7 @@ import {
     ButtonGroup,
     Snackbar
 } from '@vkontakte/vkui';
-import {Icon16Done, Icon24Delete} from '@vkontakte/icons';
+import { Icon16Done, Icon24Delete } from '@vkontakte/icons';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { GlobalContext } from "../context";
 import './ChangeCase.css';
@@ -24,6 +24,7 @@ const ChangeCase = props => {
     const [caseType, setCaseType] = useState('lowercase');
     const [error, setError] = useState('');
     const [snackbar, setSnackbar] = useState(null);
+
     const handleInputChange = (e) => {
         const text = e.target.value;
         if (text.length <= 65535) {
@@ -63,6 +64,9 @@ const ChangeCase = props => {
                     word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
                 ).join('');
                 break;
+            case 'sentence':
+                changedText = inputText.replace(/(^\s*\p{L})|([.!?]\s*\p{L})/gu, c => c.toUpperCase());
+                break;
             default:
                 changedText = inputText;
         }
@@ -97,6 +101,9 @@ const ChangeCase = props => {
                     </Radio>
                     <Radio name="caseType" value="capitalize" checked={caseType === 'capitalize'} onChange={handleCaseChange}>
                         Заглавные буквы в каждом слове
+                    </Radio>
+                    <Radio name="caseType" value="sentence" checked={caseType === 'sentence'} onChange={handleCaseChange}>
+                        Заглавные буквы в начале каждого предложения
                     </Radio>
                 </Div>
                 <ButtonGroup mode="horizontal" gap="m" stretched align="center">

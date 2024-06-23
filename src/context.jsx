@@ -1,6 +1,4 @@
-import { useEffect } from "react";
-import { useContext } from "react";
-import { createContext, useState } from "react";
+import { useEffect, useContext, createContext, useState } from "react";
 
 const defaultData = {
   path: "home",
@@ -15,8 +13,12 @@ const GlobalProvider = ({ children }) => {
   const [data, Data] = useState(defaultData);
 
   const go = (path) => {
-    if (data.aviableRoutes.includes(path)) Data(e => ({ ...e, path }))
-    else Data(e => ({ ...e, path: e.fallback }));
+    if (data.aviableRoutes.includes(path)) {
+      Data(e => ({ ...e, path }));
+      window.history.pushState({}, '', path); // добавить в историю браузера
+    } else {
+      Data(e => ({ ...e, path: e.fallback }));
+    }
   }
 
   const goBack = () => {
@@ -39,15 +41,14 @@ const GetRoutes = ({ children, fallback = "404", index = "home" }) => {
   const { setGlobalData } = useContext(GlobalContext)
 
   useEffect(() => {
-    const rc = children.props?.children
-    console.log(rc)
+    const rc = children.props?.children;
     if (rc?.[0]) {
       setGlobalData(e => ({
         ...e, fallback, index,
         aviableRoutes: rc.map(e => e.props?.id)
-      }))
+      }));
     }
-  }, [])
+  }, []); // убрали зависимости для предотвращения зацикливания
 
   return <>{children}</>
 }
